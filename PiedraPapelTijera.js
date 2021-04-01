@@ -26,17 +26,9 @@ function Juego (OpcionUsuario){
 if (OpcionUsuario === OpcionMaquina)
 {
     console.log("Es un empate, ambos eligieron "+Opciones(OpcionUsuario));
-} else if (OpcionUsuario === 1 && OpcionMaquina === 2){
+} else if (OpcionUsuario === 1 && OpcionMaquina === 2 || OpcionUsuario ===2 && OpcionMaquina === 3 || OpcionUsuario ===3 && OpcionMaquina ===1){
     console.log("Ganó la maquina, tu elegiste "+Opciones(OpcionUsuario)+" y la Máquina "+Opciones(OpcionMaquina));
-} else if (OpcionUsuario ===1 && OpcionMaquina === 3){
-    console.log("Felicidades! Ganaste!, tu elegiste "+Opciones(OpcionUsuario)+" y la Máquina "+Opciones(OpcionMaquina));
-} else if (OpcionUsuario ===2 && OpcionMaquina === 1){
-    console.log("Felicidades! Ganaste!, tu elegiste "+Opciones(OpcionUsuario)+" y la Máquina "+Opciones(OpcionMaquina));
-} else if (OpcionUsuario ===2 && OpcionMaquina === 3){
-    console.log("Ganó la maquina, tu elegiste "+Opciones(OpcionUsuario)+" y la Máquina "+Opciones(OpcionMaquina));
-} else if (OpcionUsuario ===3 && OpcionMaquina ===1){
-    console.log("Ganó la maquina, tu elegiste "+Opciones(OpcionUsuario)+" y la Máquina "+Opciones(OpcionMaquina));
-} else if (OpcionUsuario ===3 && OpcionMaquina ===2){
+} else if (OpcionUsuario ===1 && OpcionMaquina === 3 || OpcionUsuario ===2 && OpcionMaquina === 1 || OpcionUsuario ===3 && OpcionMaquina ===2){
     console.log("Felicidades! Ganaste!, tu elegiste "+Opciones(OpcionUsuario)+" y la Máquina "+Opciones(OpcionMaquina));
 } else {console.log("debe de elegir un numero entre 1 y 3, por favor digite Juego(1), Juego (2) o Juego (3)");}
 }
